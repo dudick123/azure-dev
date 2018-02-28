@@ -17,7 +17,3 @@ az vm extension set \
     --vm-name jenkins-docker-ubuntu \
     --resource-group my-resource-group \
     --settings '{"fileUris":["https://raw.githubusercontent.com/dudick123/azure-dev/master/jenkins-docker-ubuntu/install-jenkins-docker.sh"],"commandToExecute":"sh install-jenkins-docker.sh"}'
-
-
-
-https://raw.githubusercontent.com/dudick123/azure-dev/master/jenkins-docker-ubuntu/install-jenkins-docker.sh
