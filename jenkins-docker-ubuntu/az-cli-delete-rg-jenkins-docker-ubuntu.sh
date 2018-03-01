@@ -1,1 +1,1 @@
-az group delete --name jenkins-docker-ubuntu
+az group delete --name my-resource-group
