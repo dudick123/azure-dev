@@ -8,6 +8,7 @@ az vm create --resource-group my-resource-group --name jenkins-docker-ubuntu --i
 
 # Open port 80 to allow web traffic to host.
 az vm open-port --port 80 --resource-group my-resource-group --name jenkins-docker-ubuntu
+az vm open-port --port 8080 --resource-group my-resource-group --name jenkins-docker-ubuntu
 
 # Start a CustomScript extension to use a simple bash script to update, download and install WordPress and MySQL 
 az vm extension set \
