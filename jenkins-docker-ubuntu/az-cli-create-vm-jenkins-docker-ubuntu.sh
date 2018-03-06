@@ -4,7 +4,7 @@
 az group create --name my-resource-group --location southcentralus
 
 # Create a new virtual machine, this creates SSH keys if not present.
-az vm create --resource-group my-resource-group --name jenkins-docker-ubuntu --image UbuntuLTS --admin-username azureuser --generate-ssh-keys
+az vm create --resource-group my-resource-group --name jenkins-docker-ubuntu --image UbuntuLTS --admin-username azureuser --public-ip-address "104.210.148.16" --generate-ssh-keys
 
 # Open port 80 to allow web traffic to host.
 az vm open-port --port 80 --resource-group my-resource-group --name jenkins-docker-ubuntu --priority 100
