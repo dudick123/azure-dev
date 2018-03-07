@@ -22,3 +22,6 @@ sudo usermod -aG docker jenkins
 
 logger "Restarting Jenkins"
 sudo service jenkins restart
+
+logger "Starting Nginx Container"
+docker container run -d --rm -p 80:80 --name start-up-container nginx:latest
